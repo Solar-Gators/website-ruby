@@ -14,7 +14,8 @@
  *= require_self
  */
 
-@import "bulma";
+@import "semantic-ui";
+@import "semantic-ui/collections/menu";
 
 .first-section {
   background: linear-gradient(

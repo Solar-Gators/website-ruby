@@ -1,69 +1,33 @@
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
 
-    <%= link_to root_path, class: 'navbar-item' do %>
-      <%= image_tag 'logo2.png', width: '112', height: '50' %>
-    <% end %>
-
-    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
+<div class="ui menu borderless" style="-webkit-transition-duration: 0.1s;">
+  <div class="item">
+    <%= image_tag 'logo.png' %>
+  </div>
+  <a class="item">Solar Gators</a>
+  <a class="item">About us</a>
+  <a class="item">Events</a>
+  <a class="item">Sponsors</a>
+  <div class="ui dropdown item">
+    The Team<i class="dropdown icon"></i>
+    <div class="menu">
+      <a class="item">English</a>
+      <a class="item">Russian</a>
+      <a class="item">Spanish</a>
+    </div>
   </div>
 
-  <div id="navbarBasicExample" class="navbar-menu">
-    <div class="navbar-start">
-      <a class="navbar-item">
-        Home
-      </a>
-
-      <a class="navbar-item">
-        About Us
-      </a>
-
-      <a class="navbar-item">
-        Events
-      </a>
-
-      <a class="navbar-item">
-        Sponsors
-      </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          The Team
-        </a>
-
-        <div class="navbar-dropdown">
-          <a class="navbar-item">
-            Electrical
-          </a>
-          <a class="navbar-item">
-            Mechanical
-          </a>
-          <a class="navbar-item">
-            Industrial
-          </a>
-          <hr class="navbar-divider">
-          <a class="navbar-item">
-            Leads
-          </a>
-        </div>
+  <div class="right menu">
+    <div class="item">
+      <div class="ui orange button">
+        <i class="envelope open icon"></i>
+        Contact
       </div>
     </div>
-
-    <div class="navbar-end">
-      <div class="navbar-item">
-        <div class="buttons">
-          <a class="button is-link">
-            <strong>Contact</strong>
-          </a>
-          <a class="button is-light">
-            <strong>Join</strong>
-          </a>
-        </div>
+    <div class="item">
+      <div class="ui blue button">
+        <i class="flag checkered icon"></i>
+        Join
       </div>
     </div>
   </div>
-</nav>
+</div>
