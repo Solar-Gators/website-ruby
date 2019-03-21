@@ -17,7 +17,7 @@
     <div class="two wide column"></div>
     <div class="ui row six wide">
       <%= link_to 'about us', root_path, class: 'ui small inverted button', style: 'font-family: "radnika"; color: white;' %>
-      <%= link_to 'sponsors', root_path, class: 'ui small inverted button', style: 'font-family: "radnika"; color: white;' %>
+      <%= link_to 'sponsors', sponsors_path, class: 'ui small inverted button', style: 'font-family: "radnika"; color: white;' %>
       <%= link_to 'our team', root_path, class: 'ui small inverted button', style: 'font-family: "radnika"; color: white;' %>
       <%= link_to 'contact us', root_path, class: 'ui small inverted button', style: 'font-family: "radnika"; color: white;' %>
     </div>
@@ -55,13 +55,13 @@
         <div class="four wide column">
           <div class="ui icon header center aligned" style="opacity: 0.75;">
             <i class="wrench icon"></i>
-              3 cars built
+              2 cars built
           </div>
         </div>
         <div class="four wide column">
           <div class="ui icon header center aligned" style="opacity: 0.75;">
             <i class="trophy icon"></i>
-              20+ competitions attended
+              Founded in 2012
           </div>
         </div>
         <div class="four wide column">
@@ -73,7 +73,7 @@
         <div class="four wide column">
           <div class="ui icon header center aligned" style="opacity: 0.75;">
             <i class="certificate icon"></i>
-              15+ sponsors
+              25+ sponsors
           </div>
         </div>
       </div>
@@ -155,10 +155,13 @@
           All of this is possible because of our sponsors. Check them out.
         </div>
       </div>
-      <div class="ui bottom attached blue basic button">
-        <i class="info icon"></i>
-        Sponsors
-      </div>
+      <%= link_to sponsors_path do %>
+        <div class="ui bottom attached blue basic button">
+          <i class="info icon"></i>
+          Sponsors
+        </div>
+      <% end %>
+
     </div>
   </div>
 </div>
