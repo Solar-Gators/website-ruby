@@ -42,3 +42,23 @@ body {
   background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
+.sponsor-container {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+/* Centered text */
+.sponsor-centered {
+  color: #fff;
+  text-align: center;
+  width: 100vw;
+  opacity: 0.9;
+  text-shadow: 2px 2px grey;
+  font-size: 5em;
+  margin: 0px auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+}

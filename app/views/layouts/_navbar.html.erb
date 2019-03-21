@@ -1,12 +1,12 @@
 
-<div class="ui menu borderless" style="-webkit-transition-duration: 0.1s;">
+<div class="ui menu borderless" style="-webkit-transition-duration: 0.1s; margin: 0;">
   <div class="item">
     <%= image_tag 'logo.png' %>
   </div>
-  <a class="item">Solar Gators</a>
+  <%= link_to 'Solar Gators', root_path, class: 'item' %>
   <a class="item">About us</a>
   <a class="item">Events</a>
-  <a class="item">Sponsors</a>
+  <%= link_to 'Sponsors', sponsors_path, class: 'item' %>
   <div class="ui dropdown item">
     The Team<i class="dropdown icon"></i>
     <div class="menu">
