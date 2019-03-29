@@ -1,0 +1,36 @@
+/*       
+	About Us styleSheet 
+*/
+
+.system{
+
+	display: flex;
+	max-width:1400px;
+	margin: 40px auto 0 auto;
+	flex-wrap: wrap;
+
+	
+}
+
+
+.systems{
+	padding: 20px;
+	margin-bottem:20px;
+	flex:1;
+	border: 1px solid;
+	flex-basis:37%;
+
+	
+
+}
+
+
+.abt_us{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	background:LightSlateGray;
+	font-size: 15em 
+	color:black;
+	text-align: center;
+}
