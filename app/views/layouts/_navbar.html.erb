@@ -4,24 +4,37 @@
     <%= image_tag 'logo.png' %>
   </div>
   <%= link_to 'Solar Gators', root_path, class: 'item' %>
-  <a class="item">About us</a>
-  <a class="item">Events</a>
+  <%= link_to 'About us', about_path, class: 'item' %>
+  <%= link_to 'Events', events_path, class: 'item' %>
   <%= link_to 'Sponsors', sponsors_path, class: 'item' %>
-  <div class="ui dropdown item">
-    The Team<i class="dropdown icon"></i>
+  <%= link_to team_path, class: 'ui simple dropdown item' do %>
+    The Team
+    <i class="dropdown icon"></i>
     <div class="menu">
-      <a class="item">English</a>
-      <a class="item">Russian</a>
-      <a class="item">Spanish</a>
+      <div class="item">Auxiliary</div>
+      <div class="item">Power Board</div>
+      <div class="item">Battery Pack</div>
+      <div class="item">Battery Management System</div>
+      <div class="item">Strategy</div>
+      <div class="item">Telemetry</div>
+      <div class="item">Maximum Power Point Tracker</div>
+      <div class="item">Battery Box</div>
+      <div class="item">Solar Array</div>
+      <div class="item">Composites</div>
+      <div class="item">Body</div>
+      <div class="item">Crush Zone</div>
+      <div class="item">Chassis</div>
+      <div class="item">Brakes</div>
+      <div class="item">Suspension</div>
     </div>
-  </div>
+  <% end %>
 
   <div class="right menu">
     <div class="item">
-      <div class="ui orange button">
+      <%= link_to contact_path, class: 'ui orange button' do %>
         <i class="envelope open icon"></i>
         Contact
-      </div>
+      <% end %>
     </div>
     <div class="item">
       <div class="ui blue button">
