@@ -15,6 +15,8 @@
 //= require turbolinks
 //= require_tree .
 //= require semantic-ui
+//= require semantic-ui/modal
+//= require semantic-ui/dropdown
 
 $(document).on('turbolinks:load', function() {
   $('.general-description').on('click', function() {

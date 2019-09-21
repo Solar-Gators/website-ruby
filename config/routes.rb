@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'sponsors', to: 'index#sponsors'
   get 'about', to: 'index#about'
   get 'events', to: 'index#events'
+  get 'donate', to: 'index#donate'
 
   get 'team', to: 'index#team'
   get 'contact', to: 'index#contact'
